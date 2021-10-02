@@ -7,47 +7,67 @@
     </head>
 
     <body class="bg-dark text-white">
-        <div class="container-fluid vh-100">
-            <h1>Index of Projects</h1>
-
-            <h2>Aseprite Extensions:</h2>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark shadow p-3 mb-5 bg-dark rounded">
             <div class="container-fluid">
+                <a class="navbar-brand" href="#">Index of Projects</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarItems">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#extensions">Aseprite Extensions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#projects">Personal Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#contributions">Contributions</a>
+                      </li>
+                    </ul>
+                </div> 
+            </div>
+        </nav>
+
+        <div class="container-fluid vh-100 px-5">
+            <div class="container-fluid shadow p-3 mb-5 bg-dark rounded">
+                <h4 id="extensions">Aseprite Extensions:</h4>
                 <div class="row">
                     <div class="col col-md-6 col-lg-4">
-                        <div class="card bg-dark">
+                        <div class="card bg-dark shadow-sm p-3 mb-5 bg-dark rounded">
                             <img src="assets/font-custom-hero.png" alt="font custom title image">
                             <div class="card-body">
-                                <h5 class="card title bg-dark">Font Custom</h5>
+                                <h5 class="card title bg-dark border-0">Font Custom</h5>
                                 <p class="card-text">Font Custom is an Aseprite plugin that allows you to use your own font atlas when printing text to the screen!</p>
                                 <a href="https://github.com/david-fletcher/font-custom/" target="_blank" class="btn btn-primary">Visit Repository</a>
                             </div>
                         </div>
                     </div>
                     <div class="col col-md-6 col-lg-4">
-                        <div class="card bg-dark">
+                        <div class="card bg-dark shadow-sm p-3 mb-5 bg-dark rounded">
                             <img src="assets/sprite-shrink-hero.png" alt="sprite shrink title image">
                             <div class="card-body">
-                                <h5 class="card title bg-dark">Sprite Shrink</h5>
+                                <h5 class="card title bg-dark border-0">Sprite Shrink</h5>
                                 <p class="card-text">Sprite Shrink is an Aseprite plugin that allows you to quickly create animations that grow or shrink a cel's image over a set number of frames.</p>
                                 <a href="https://github.com/david-fletcher/sprite-shrink/" target="_blank" class="btn btn-primary">Visit Repository</a>
                             </div>
                         </div>
                     </div>
                     <div class="col col-md-6 col-lg-4">
-                        <div class="card bg-dark">
+                        <div class="card bg-dark shadow-sm p-3 mb-5 bg-dark rounded">
                             <img src="assets/super-export-hero.png" alt="super export title image">
                             <div class="card-body">
-                                <h5 class="card title bg-dark">Super Export</h5>
+                                <h5 class="card title bg-dark border-0">Super Export</h5>
                                 <p class="card-text">Super Export is an Aseprite plugin that allows you to export your projects with arbitrary percentage resizings, even greater than 1000%!</p>
                                 <a href="https://github.com/david-fletcher/super-export/" target="_blank" class="btn btn-primary">Visit Repository</a>
                             </div>
                         </div>
                     </div>
                     <div class="col col-md-6 col-lg-4">
-                        <div class="card bg-dark">
+                        <div class="card bg-dark shadow-sm p-3 mb-5 bg-dark rounded">
                             <img src="assets/layer-presets-hero.png" alt="layer presets title image">
                             <div class="card-body">
-                                <h5 class="card title bg-dark">Layer Presets</h5>
+                                <h5 class="card title bg-dark border-0">Layer Presets</h5>
                                 <p class="card-text">Layer Presets is an Aseprite plugin that allows you to create, save, and load custom groupings of layers!</p>
                                 <a href="https://github.com/david-fletcher/layer-presets/" target="_blank" class="btn btn-primary">Visit Repository</a>
                             </div>
@@ -56,42 +76,42 @@
                 </div>
             </div>
 
-            <h2>Personal Projects:</h2>
-            <div class="container-fluid">
+            <div class="container-fluid shadow p-3 mb-5 bg-dark rounded">
+                <h4 id="projects">Personal Projects:</h4>
                 <div class="row">
                     <div class="col col-md-6 col-lg-4">
-                        <div class="card bg-dark">
+                        <div class="card bg-dark shadow-sm p-3 mb-5 bg-dark rounded">
                             <div class="card-body">
-                                <h5 class="card title bg-dark">Aseprite Extension Base</h5>
+                                <h5 class="card title bg-dark border-0">Aseprite Extension Base</h5>
                                 <p class="card-text">Some boiler-plate code to help developers new to writing Aseprite extensions get off the ground.</p>
                                 <a href="https://github.com/david-fletcher/extension-base/" target="_blank" class="btn btn-primary">Visit Repository</a>
                             </div>
                         </div>
                     </div>
                     <div class="col col-md-6 col-lg-4">
-                        <div class="card bg-dark">
+                        <div class="card bg-dark shadow-sm p-3 mb-5 bg-dark rounded">
                             <img src="assets/speedcat_banner.jpg" alt="speedcat title image">
                             <div class="card-body">
-                                <h5 class="card title bg-dark">SPEEDCAT</h5>
+                                <h5 class="card title bg-dark border-0">SPEEDCAT</h5>
                                 <p class="card-text">A small 2D platformer, written in Lua on the PICO-8 system.</p>
                                 <a href="https://github.com/david-fletcher/speedcat/" target="_blank" class="btn btn-primary">Visit Repository</a>
                             </div>
                         </div>
                     </div>
                     <div class="col col-md-6 col-lg-4">
-                        <div class="card bg-dark">
+                        <div class="card bg-dark shadow-sm p-3 mb-5 bg-dark rounded">
                             <div class="card-body">
-                                <h5 class="card title bg-dark">Vote Bot</h5>
+                                <h5 class="card title bg-dark border-0">Vote Bot</h5>
                                 <p class="card-text">A simple Discord bot that automagically puts upvote and downvote reactions on new messages in watched channels.</p>
                                 <a href="https://github.com/david-fletcher/vote-bot/" target="_blank" class="btn btn-primary">Visit Repository</a>
                             </div>
                         </div>
                     </div>
                     <div class="col col-md-6 col-lg-4">
-                        <div class="card bg-dark">
+                        <div class="card bg-dark shadow-sm p-3 mb-5 bg-dark rounded">
                             <img src="assets/gdc_banner.jpg" alt="games done casual title image">
                             <div class="card-body">
-                                <h5 class="card title bg-dark">Games Done Casual</h5>
+                                <h5 class="card title bg-dark border-0">Games Done Casual</h5>
                                 <p class="card-text">My YouTube channel where I play games casually and have a good time.</p>
                                 <a href="https://www.youtube.com/channel/UCy8-YEEg5zhFJ6919l8rnPw" target="_blank" class="btn btn-primary">Visit Channel</a>
                             </div>
@@ -100,22 +120,22 @@
                 </div>
             </div>
 
-            <h2>Contributed To:</h2>
-            <div class="container-fluid">
+            <div class="container-fluid shadow p-3 mb-5 bg-dark rounded">
+                <h4 id="contributions">Contributed To:</h4>
                 <div class="row">
                     <div class="col col-md-6 col-lg-4">
-                        <div class="card bg-dark">
+                        <div class="card bg-dark shadow-sm p-3 mb-5 bg-dark rounded">
                             <div class="card-body">
-                                <h5 class="card title bg-dark">PhantomAbyssTranslate</h5>
+                                <h5 class="card title bg-dark border-0">PhantomAbyssTranslate</h5>
                                 <p class="card=text">A simple SPA that was created to help the Phantom Abyss gaming community translate the in-game language.</p>
                                 <a href="https://github.com/hochbergg/PhantomAbyssTranslate" target="_blank" class="btn btn-primary">Visit Repository</a>
                             </div>
                         </div>
                     </div>
                     <div class="col col-md-6 col-lg-4">
-                        <div class="card bg-dark">
+                        <div class="card bg-dark shadow-sm p-3 mb-5 bg-dark rounded">
                             <div class="card-body">
-                                <h5 class="card title bg-dark">Clockroot</h5>
+                                <h5 class="card title bg-dark border-0">Clockroot</h5>
                                 <p class="card=text">A simple SPA that organizes, informs, and keeps track of the automated factions from popular board game Root.</p>
                                 <a href="https://github.com/Vagabottos/clockroot" target="_blank" class="btn btn-primary">Visit Repository</a>
                             </div>
